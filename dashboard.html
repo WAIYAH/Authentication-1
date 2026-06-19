@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaCore | Dashboard</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+    <header class="dashboard-header">
+        <a class="brand dark-brand" href="signin.html" aria-label="NovaCore landing page">
+            <span class="brand-mark"><i class="fa-solid fa-layer-group"></i></span>
+            <span>NovaCore</span>
+        </a>
+
+        <form class="search-form" action="dashboard.html" method="get" role="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <label class="sr-only" for="dashboard-search">Search dashboard</label>
+            <input type="search" id="dashboard-search" placeholder="Search projects">
+        </form>
+
+        <nav class="dashboard-actions" aria-label="Dashboard actions">
+            <a href="signin.html" title="Landing page" aria-label="Landing page">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="index.html" title="Logout" aria-label="Logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main class="dashboard-layout">
+        <aside class="sidebar" aria-label="Dashboard navigation">
+            <a class="active" href="dashboard.html">
+                <i class="fa-solid fa-table-columns"></i>
+                Overview
+            </a>
+            <a href="dashboard.html">
+                <i class="fa-solid fa-folder-open"></i>
+                Projects
+            </a>
+            <a href="dashboard.html">
+                <i class="fa-solid fa-calendar-days"></i>
+                Schedule
+            </a>
+            <a href="dashboard.html">
+                <i class="fa-solid fa-users"></i>
+                Team
+            </a>
+            <a href="dashboard.html">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+        </aside>
+
+        <section class="dashboard-content" aria-labelledby="dashboard-title">
+            <div class="dashboard-title-row">
+                <div>
+                    <p class="eyebrow dark-eyebrow">Workspace overview</p>
+                    <h1 id="dashboard-title">Welcome back, Alex.</h1>
+                </div>
+                <a class="primary-button" href="signin.html">
+                    Landing page
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+            <section class="metric-grid" aria-label="Project metrics">
+                <article class="metric-card">
+                    <span><i class="fa-solid fa-layer-group"></i></span>
+                    <p>Active projects</p>
+                    <strong>12</strong>
+                </article>
+                <article class="metric-card">
+                    <span><i class="fa-solid fa-circle-check"></i></span>
+                    <p>Completed tasks</p>
+                    <strong>86</strong>
+                </article>
+                <article class="metric-card">
+                    <span><i class="fa-solid fa-chart-simple"></i></span>
+                    <p>Progress score</p>
+                    <strong>92%</strong>
+                </article>
+                <article class="metric-card">
+                    <span><i class="fa-solid fa-message"></i></span>
+                    <p>Team updates</p>
+                    <strong>18</strong>
+                </article>
+            </section>
+
+            <section class="dashboard-grid">
+                <article class="dashboard-card wide-card">
+                    <div class="card-heading">
+                        <div>
+                            <h2>Project performance</h2>
+                            <p>Dummy weekly progress overview</p>
+                        </div>
+                        <span class="status-pill">On track</span>
+                    </div>
+
+                    <div class="analytics-chart" aria-label="Weekly project progress chart">
+                        <span class="chart-bar-44"></span>
+                        <span class="chart-bar-68"></span>
+                        <span class="chart-bar-52"></span>
+                        <span class="chart-bar-82"></span>
+                        <span class="chart-bar-74"></span>
+                        <span class="chart-bar-90"></span>
+                    </div>
+                </article>
+
+                <article class="dashboard-card">
+                    <div class="card-heading">
+                        <div>
+                            <h2>Today</h2>
+                            <p>Schedule</p>
+                        </div>
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+
+                    <ul class="timeline-list">
+                        <li>
+                            <span>09:00</span>
+                            UI review
+                        </li>
+                        <li>
+                            <span>12:30</span>
+                            Database planning
+                        </li>
+                        <li>
+                            <span>15:00</span>
+                            Demo rehearsal
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="dashboard-card">
+                    <div class="card-heading">
+                        <div>
+                            <h2>Recent projects</h2>
+                            <p>Quick status</p>
+                        </div>
+                        <i class="fa-solid fa-folder-open"></i>
+                    </div>
+
+                    <div class="project-list">
+                        <div>
+                            <span class="project-dot teal-dot"></span>
+                            <p>Student portal</p>
+                            <strong>78%</strong>
+                        </div>
+                        <div>
+                            <span class="project-dot rose-dot"></span>
+                            <p>Library system</p>
+                            <strong>64%</strong>
+                        </div>
+                        <div>
+                            <span class="project-dot gold-dot"></span>
+                            <p>Portfolio site</p>
+                            <strong>96%</strong>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="dashboard-card">
+                    <div class="card-heading">
+                        <div>
+                            <h2>Activity</h2>
+                            <p>Latest updates</p>
+                        </div>
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+
+                    <div class="activity-feed">
+                        <p><strong>Maya</strong> uploaded new wireframes.</p>
+                        <p><strong>Jordan</strong> marked API setup complete.</p>
+                        <p><strong>Sam</strong> added dashboard test notes.</p>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

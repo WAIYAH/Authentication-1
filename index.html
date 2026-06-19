@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Access | NovaCore</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="auth-page">
+        <div class="background-shape shape-one"></div>
+        <div class="background-shape shape-two"></div>
+        <div class="background-shape shape-three"></div>
+
+        <section class="auth-shell" aria-labelledby="auth-title">
+            <aside class="brand-panel">
+                <a class="brand" href="signin.html" aria-label="NovaCore home">
+                    <span class="brand-mark"><i class="fa-solid fa-layer-group"></i></span>
+                    <span>NovaCore</span>
+                </a>
+
+                <div class="brand-content">
+                    <p class="eyebrow">Secure workspace</p>
+                    <h1 id="auth-title">Build smarter projects with one connected account.</h1>
+                    <p class="brand-copy">
+                        Access dashboards, project resources, and collaboration tools from a clean modern workspace.
+                    </p>
+                </div>
+
+                <div class="trust-row" aria-label="Platform highlights">
+                    <div>
+                        <strong>24k+</strong>
+                        <span>Students</span>
+                    </div>
+                    <div>
+                        <strong>99.9%</strong>
+                        <span>Uptime</span>
+                    </div>
+                    <div>
+                        <strong>4.9</strong>
+                        <span>Rating</span>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="form-panel" aria-label="Authentication forms">
+                <input class="tab-input" type="radio" name="auth-tab" id="login-tab" checked>
+                <input class="tab-input" type="radio" name="auth-tab" id="register-tab">
+
+                <div class="tab-switcher" role="tablist" aria-label="Choose account form">
+                    <label class="tab-button login-toggle" for="login-tab" role="tab">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        Login
+                    </label>
+                    <label class="tab-button register-toggle" for="register-tab" role="tab">
+                        <i class="fa-solid fa-user-plus"></i>
+                        Register
+                    </label>
+                </div>
+
+                <div class="forms-stack">
+                    <form class="auth-form login-form" action="dashboard.html" method="get">
+                        <div class="form-heading">
+                            <span class="form-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                            <div>
+                                <h2>Welcome back</h2>
+                                <p>Sign in to continue to your workspace.</p>
+                            </div>
+                        </div>
+
+                        <div class="social-grid">
+                            <a class="social-button" href="dashboard.html">
+                                <i class="fa-brands fa-google"></i>
+                                Continue with Google
+                            </a>
+                            <a class="social-button" href="dashboard.html">
+                                <i class="fa-brands fa-github"></i>
+                                Continue with GitHub
+                            </a>
+                        </div>
+
+                        <div class="divider"><span>or use email</span></div>
+
+                        <div class="input-group">
+                            <label for="login-email">Email address</label>
+                            <div class="input-field">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" id="login-email" name="email" placeholder="you@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="login-password">Password</label>
+                            <div class="input-field">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+                            </div>
+                        </div>
+
+                        <div class="form-options">
+                            <label class="checkbox-label" for="remember-me">
+                                <input type="checkbox" id="remember-me" name="remember">
+                                <span>Remember me</span>
+                            </label>
+                            <a href="signin.html">Forgot password?</a>
+                        </div>
+
+                        <button class="primary-button" type="submit">
+                            Login
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <form class="auth-form register-form" action="dashboard.html" method="get">
+                        <div class="form-heading">
+                            <span class="form-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                            <div>
+                                <h2>Create account</h2>
+                                <p>Start your software workspace in minutes.</p>
+                            </div>
+                        </div>
+
+                        <div class="social-grid">
+                            <a class="social-button" href="dashboard.html">
+                                <i class="fa-brands fa-google"></i>
+                                Continue with Google
+                            </a>
+                            <a class="social-button" href="dashboard.html">
+                                <i class="fa-brands fa-github"></i>
+                                Continue with GitHub
+                            </a>
+                        </div>
+
+                        <div class="divider"><span>or register with email</span></div>
+
+                        <div class="input-group">
+                            <label for="register-name">Full name</label>
+                            <div class="input-field">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" id="register-name" name="full-name" placeholder="Alex Morgan" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="register-email">Email address</label>
+                            <div class="input-field">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" id="register-email" name="email" placeholder="you@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="register-password">Password</label>
+                            <div class="input-field">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" id="register-password" name="password" placeholder="Create a password" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="confirm-password">Confirm password</label>
+                            <div class="input-field">
+                                <i class="fa-solid fa-key"></i>
+                                <input type="password" id="confirm-password" name="confirm-password" placeholder="Repeat your password" required>
+                            </div>
+                        </div>
+
+                        <button class="primary-button" type="submit">
+                            Register
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
